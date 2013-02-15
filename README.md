@@ -1,5 +1,5 @@
-LaTeX Template for Project Report, Version 1.0
-(Abstracted for a Value Education Project Report at NIT Calicut but can be
+LaTeX Template for Project Report, Version 2.0
+(Abstracted from a Major Project Report at CSED, NIT Calicut but can be
 modified easily to use for other reports also.)
 
 Released under Creative Commons Attribution license (CC-BY)
@@ -28,4 +28,5 @@ Start editing with report.tex and follow the instructions given there.
 
 Credits:
 ========
-NITC logo courtesy: Mr. Chandramohan MK, Graphic Studio, Central Library, NIT Calicut
+NITC logo: Mr Chandramohan MK, Graphic Studio, Central Library, NIT Calicut
+Hacker logo: http://www.catb.org/hacker-emblem/
