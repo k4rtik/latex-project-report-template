@@ -1,5 +1,5 @@
-% LaTeX Template for Project Report, Version 1.0
-% (Abstracted for a Value Education Project Report at NIT Calicut but can be
+% LaTeX Template for Project Report, Version 2.0
+% (Abstracted from a Major Project Report at CSED, NIT Calicut but can be
 % modified easily to use for other reports also.)
 %
 % Released under Creative Commons Attribution license (CC-BY)
@@ -23,8 +23,8 @@
 \documentclass[12pt,a4paper]{report}
 \usepackage[pdftex]{graphicx} %for embedding images
 \usepackage{url} %for proper url entries
-\usepackage[dvips, bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={<pdf title here>}, pdfauthor={<author's name here>}, pdfsubject={<subject here>}, pdfkeywords={<keywords here>}]{hyperref} %for creating links in the pdf version and other additional pdf attributes, no effect on the printed document
-\usepackage[final]{pdfpages} %for embedding another pdf, remove if not required
+\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={<pdf title here>}, pdfauthor={<author's name here>}, pdfsubject={<subject here>}, pdfkeywords={<keywords here>}]{hyperref} %for creating links in the pdf version and other additional pdf attributes, no effect on the printed document
+%\usepackage[final]{pdfpages} %for embedding another pdf, remove if not required
 
 \begin{document}
 \renewcommand\bibname{References} %Renames "Bibliography" to "References" on ref page
@@ -41,10 +41,11 @@
 \newpage
 \pagenumbering{arabic} %reset numbering to normal for the main content
 
-\input{./objective.tex}
-\input{./literature-survey.tex}
+\input{./prob-definition.tex} %objective changed to problem definition
+\input{./introduction.tex} %literature survey included in this
 \input{./work-done.tex}
 \input{./future-work.tex}
+\input{./conclusion.tex}
 \input{./acknow.tex}
 \input{./ref.tex}
 
