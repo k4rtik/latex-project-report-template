@@ -23,7 +23,7 @@
 \documentclass[12pt,a4paper]{report}
 \usepackage[pdftex]{graphicx} %for embedding images
 \usepackage{url} %for proper url entries
-\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={<pdf title here>}, pdfauthor={<author's name here>}, pdfsubject={<subject here>}, pdfkeywords={<keywords here>}]{hyperref} %for creating links in the pdf version and other additional pdf attributes, no effect on the printed document
+\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={Project Report}, pdfauthor={Abijith KP||KS Kurian}, pdfsubject={CSE}, pdfkeywords={IDS}]{hyperref} %for creating links in the pdf version and other additional pdf attributes, no effect on the printed document
 %\usepackage[final]{pdfpages} %for embedding another pdf, remove if not required
 
 \begin{document}
@@ -31,22 +31,26 @@
 
 %include other pages
 \input{./title.tex}
-\input{./certificate.tex}
-\input{./abstract.tex}
+% \input{./certificate.tex}
+% \input{./abstract.tex}
 
 \pagenumbering{roman} %numbering before main content starts
 \tableofcontents
-\listoffigures
+% \listoffigures
 
 \newpage
 \pagenumbering{arabic} %reset numbering to normal for the main content
 
 \input{./prob-definition.tex} %objective changed to problem definition
-\input{./introduction.tex} %literature survey included in this
-\input{./work-done.tex}
+\input{./approach.tex}
+\input{./current_work.tex}
+% \input{./introduction.tex} %literature survey included in this
+% \input{./work-done.tex}
+
+%% work remaining
 \input{./future-work.tex}
 \input{./conclusion.tex}
-\input{./acknow.tex}
-\input{./ref.tex}
+% \input{./acknow.tex}
+% \input{./ref.tex}
 
 \end{document}
