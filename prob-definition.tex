@@ -1,5 +1,8 @@
-\chapter{Problem Definition}
+\section{Problem Definition}
 
 \textsf{To design and implement an Intrusion Detection System that tracks the system calls of an application so as to detect a malware.} \\
-\section{Abstract} 
-\textsf{In this project we develop a method and its implementation for detecting malware of a process using sequence system calls invoked by the process. This works as a host based Intrusion Detection System. Signature backbone is created using the largest sequence of repeating sub-sequence and the branches from the backbone sequence is saved in another list, which together forms the complete signature. It uses an idea similar to that of poset to represent the second list for the “signature”. The attack is identified by identifying the deviation of the input sequence of system calls from the signature created earlier either in a dynamic or in a static environment.}
+
+\begin{quotation}
+    \hspace{100pt} \textbf{Abstract} \\
+\textsf{In this project we develop a method for detecting whether a process is a malware using sequence  of system calls invoked by the process. This works as a host based Intrusion Detection System. Signature backbone is created using the largest sequence of repeating sub-sequence and the branches from the backbone sequence is saved in another list, which together forms the complete signature. It uses an idea similar to that of poset to represent the branches for the “signature”. The attack is identified by measuring the deviation of the input sequence of system calls from the signature created earlier either in a dynamic or static environment.}
+\end{quotation}

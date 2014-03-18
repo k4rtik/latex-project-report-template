@@ -20,14 +20,14 @@
 %
 % Just compile this file using pdflatex after making all required changes.
 
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper]{article}
 \usepackage[pdftex]{graphicx} %for embedding images
 \usepackage{url} %for proper url entries
 \usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={Project Report}, pdfauthor={Abijith KP||KS Kurian}, pdfsubject={CSE}, pdfkeywords={IDS}]{hyperref} %for creating links in the pdf version and other additional pdf attributes, no effect on the printed document
 %\usepackage[final]{pdfpages} %for embedding another pdf, remove if not required
 
 \begin{document}
-\renewcommand\bibname{References} %Renames "Bibliography" to "References" on ref page
+% \renewcommand\bibname{References} %Renames "Bibliography" to "References" on ref page
 
 %include other pages
 \input{./title.tex}
@@ -42,14 +42,16 @@
 \pagenumbering{arabic} %reset numbering to normal for the main content
 
 \input{./prob-definition.tex} %objective changed to problem definition
+\newpage
 \input{./approach.tex}
 \input{./current_work.tex}
 % \input{./introduction.tex} %literature survey included in this
 % \input{./work-done.tex}
 
+\newpage
 %% work remaining
 \input{./future-work.tex}
-\input{./conclusion.tex}
+% \input{./conclusion.tex}
 % \input{./acknow.tex}
 % \input{./ref.tex}
 
