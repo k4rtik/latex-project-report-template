@@ -1,0 +1,35 @@
+\chapter{Approach}
+\section{Version 1}
+\begin{itemize}
+    \item[] Implementation 
+        \begin{itemize}
+            \item \textbf{Ist Phase} : creating signature using linked list and cross comparison
+            \item \textbf{IInd Phase} : comparisons between signature and inputs sequence
+        \end{itemize}
+    \item[] {Advantage}
+        \begin{itemize}
+            \item Signature was always linear
+            \item Signature required less space
+            \item Easier computation and used link list
+        \end{itemize}
+    \item[] {Disadvantage}
+        \begin{itemize}
+            \item Signature followed the smallest input
+            \item Signature soon became inadequate as it was too small
+            \item Did not consider the system calls that are rejected if it didn't exist in both. Hence had to modify unique
+        \end{itemize}
+    \item[] {Points to be noted}
+        \begin{itemize}
+            \item Signature needs to include branches not done during learning phase
+            \item System calls like mutex, poll and futex repeated many times hence were not considered during signature creation
+        \end{itemize}
+\end{itemize}
+\section{Version 2}
+\begin{itemize}
+    \item[] {Signature now includes}
+        \begin{itemize}
+            \item A backbone sequence is created by finding the common sequence of system calls in the input dataset
+            \item Rest of the elements are added to the signature in the forms of pairs as per their occurrences in the input sequence after processing
+            \item Unique list of system calls to identify those system calls that are never used
+        \end{itemize}
+\end{itemize}

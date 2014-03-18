@@ -1,0 +1,26 @@
+\chapter{Current Work}
+
+\begin{itemize}
+    \item[] Ist Phase : Preprocessing Stage
+    \item[] \begin{itemize}
+                \item[] \textbf{Input}    : A sequence of system calls during normal running of an application. 
+                \item[] \textbf{Output} : A resultant sequence of system calls after eliminating the consecutive repetition of sequences of system calls and the size of the largest repeating sequence.
+            \end{itemize}
+    \item[] IInd Phase : Processing Stage
+    \item[] \begin{itemize}
+                \item[] \textbf{Input}    : Set of sequence of system calls from various normal runs of an application over different inputs, after undergoing the preprocessing stage
+                \item[] \textbf{Output} : Creates a consolidated signature from various runs of an application without losing any information from each of the runs
+            \end{itemize}
+
+    \item[] IIIrd Phase : Feedback system and improving the signature.
+    \item[] \begin{itemize}
+                \item[] \textbf{Input}    : Modified set of system calls of a known application
+                \item[] \textbf{Output} : Additional sequence of system calls are incorporated to the signature so that a system of feedback is incorporated
+            \end{itemize}
+
+    \item[] IVth Phase : Identifying anomaly in the running of an application using the created signature.
+    \item[] \begin{itemize}
+                \item[] \textbf{Input} : Set of signatures of the applications considered and the log of system calls for the running of an unknown application
+                \item[] \textbf{Output} : Classifying the application as a malware or as normal running
+            \end{itemize}
+\end{itemize}
