@@ -1,0 +1,46 @@
+\section{Approach}
+\subsection{Version 1}
+    \begin{itemize}
+        \item[] \textbf{Ist Phase} Preprocessing \\ Creating signature using linked list and cross comparison over set of sequence of system calls.
+            \begin{itemize}
+                \item[] Input: A finite set of applications and various inputs to the application.
+                \item[] Output: Set of signatures uniquely identifying the applications in the system.
+            \end{itemize}
+        \item[] \textbf{IInd Phase} Processing \\ Detecting malware by comparisons of set of signature and input sequence of system calls.
+            \begin{itemize}
+                \item[] Input: A random application.
+                \item[] Output: Checking for malware for given application.
+            \end{itemize}
+    \end{itemize}
+
+<Why version 2>
+
+\subsection{Version 2}
+\begin{itemize}
+    \item[] {New signature design:}
+        \begin{itemize}
+            \item[*] A backbone sequence is created by finding the common sequence of system calls in the input dataset.
+            \item[*] Rest of the elements are added to the signature in the form of pairs as per their occurrences in the input sequence after processing.
+            \item[*] Unique list of system calls to identify those system calls that are never used. \\ \\
+        \end{itemize}
+\end{itemize}
+\begin{itemize}
+    \item[] {Advantage}
+        \begin{itemize}
+            \item[*] Showed that an application does have a finitely large backbone which would be present in any run of the application.
+            \item[*] Signature database requires less space.
+            \item[*] Signature is always linear.
+        \end{itemize}
+    \item[] {Disadvantage}
+        \begin{itemize}
+            \item[*] Signature followed the smallest input sequence of system calls.
+            \item[*] Signature converged and became inadequate as it was too small.
+            \item[*] The signature did not consider the system calls that are rejected while cross comparing if it didn't exist in either of them.
+            \item[*] Huge chances of false positive and hence the need to modify the preliminary checks. \\
+        \end{itemize}
+    \item[] {TO-DO:}
+        \begin{itemize}                                        
+            \item[] Signature needs to include branches which was not done during learning phase. Signature needs to incorporate a feedback system so as to develop effective system. Information loss over lesser space complexity will lead to a poor system. All information should be captured during the learning phase. System calls like mutex, poll and futex are repeated many times and hence were not considered during signature creation.
+        \end{itemize}
+\end{itemize}
+Hence an improvised version of the IDS has been designed inculcating the advantages and eliminating the disadvantages from previous versions to the maximum extend possible.

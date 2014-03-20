@@ -1,0 +1,34 @@
+\section{Current Work}
+
+\subsection{Idea}
+Basic idea is to make a signature for uniquely identifying an application. Then compare the input sequence of system calls of a random process with the set of signatures. After calculating the deviation from the signature, if it is over a threshold value for a certain process declare as malware.
+
+\subsection{Implementation}
+\begin{itemize}
+    \item[] \textbf{Ist Phase}: Preprocessing Stage
+    \item[] \begin{itemize}
+                \item[] \textbf{Input}: A sequence of system calls during normal running of an application. 
+                \item[] \textbf{Output}: A resultant sequence of system calls after eliminating repetitive sequences of system calls and the size of the largest repeating sequence.
+            \end{itemize}
+    \item[] Description: To avoid data redundancy during signature creation by modifying the sequence of system calls in such a way that information is not lost while its integrity is retained.
+
+    \item[] \textbf{IInd Phase}: Processing Stage
+    \item[] \begin{itemize}
+                \item[] \textbf{Input}: Preprocessed set of sequence of system calls from various normal runs of an application over different inputs.
+                \item[] \textbf{Output}: A consolidated signature without losing any information from any of the sequence of system calls.
+            \end{itemize}
+    \item[] Description : Signature creation for each application from the set of sequential system calls obtained after running the application multiple times.    
+    \item[] \textbf{IIIrd Phase}: Feedback system
+    \item[] \begin{itemize}
+                \item[] \textbf{Input}: The signature of the application and a sequence of system calls or a known attack of the application to be incorporated into the signature.
+                \item[] \textbf{Output}: Additional sequence of system calls are incorporated or a sequence of system calls are removed from the signature.
+            \end{itemize}
+    \item[] Description: Feedback system and hence improving the signature.
+
+    \item[] \textbf{IVth Phase}: Malware detection
+    \item[] \begin{itemize}
+                \item[] \textbf{Input}: Set of signatures of the applications considered and the log of system calls for the running of an unknown application.
+                \item[] \textbf{Output}: Classifying the application as a malware or as normal.
+            \end{itemize}
+    \item[] Description: Identifying anomaly in the running of an application by matching with the created set of signatures.
+\end{itemize}
