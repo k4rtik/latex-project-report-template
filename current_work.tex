@@ -1,7 +1,7 @@
 \section{Current Work}
 
 \subsection{Idea}
-Basic idea behind, is to make a signature for uniquely identifying an application. Then compare the input sequence of system calls of a random process with the set of signatures. After calculating the deviation from the signature, if it is over a threshold value for a certain process then consider that as a malware.
+Basic idea is to make a signature for uniquely identifying an application. Then compare the input sequence of system calls of a random process with the set of signatures. After calculating the deviation from the signature, if it is over a threshold value for a certain process declare as malware.
 
 \subsection{Implementation}
 \begin{itemize}
@@ -10,7 +10,7 @@ Basic idea behind, is to make a signature for uniquely identifying an applicatio
                 \item[] \textbf{Input}: A sequence of system calls during normal running of an application. 
                 \item[] \textbf{Output}: A resultant sequence of system calls after eliminating repetitive sequences of system calls and the size of the largest repeating sequence.
             \end{itemize}
-    \item[] Description: To avoid data redundancy during signature creation by modifying the sequence of system calls in such a way that information is not lost while it's integrity is retained.
+    \item[] Description: To avoid data redundancy during signature creation by modifying the sequence of system calls in such a way that information is not lost while its integrity is retained.
 
     \item[] \textbf{IInd Phase}: Processing Stage
     \item[] \begin{itemize}
