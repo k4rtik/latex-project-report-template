@@ -2,24 +2,34 @@
 \subsection{Version 1}
     \begin{itemize}
         \item[] \textbf{Ist Phase} Preprocessing \\ Creating signature using linked list and cross comparison over set of sequence of system calls.
+            \begin{itemize}
+                \item[] Input: A finite set of applications and various inputs to the application.
+                \item[] Output: Set of signatures uniquely identifying the applications in the system.
+            \end{itemize}
         \item[] \textbf{IInd Phase} Processing \\ Detecting malware by comparisons of set of signature and input sequence of system calls.
+            \begin{itemize}
+                \item[] Input: A random application.
+                \item[] Output: Checking for malware for given application.
+            \end{itemize}
     \end{itemize}
+
+<Why version 2>
+
 \subsection{Version 2}
 \begin{itemize}
     \item[] {New signature design:}
         \begin{itemize}
             \item[*] A backbone sequence is created by finding the common sequence of system calls in the input dataset.
             \item[*] Rest of the elements are added to the signature in the form of pairs as per their occurrences in the input sequence after processing.
-            \item[*] Unique list of system calls to identify those system calls that are never used.
+            \item[*] Unique list of system calls to identify those system calls that are never used. \\ \\
         \end{itemize}
 \end{itemize}
 \begin{itemize}
     \item[] {Advantage}
         \begin{itemize}
             \item[*] Showed that an application does have a finitely large backbone which would be present in any run of the application.
-            \item[*] Signature database required less space.
-            \item[*] Easier computation and used link list for implementation.
-            \item[*] Signature was always linear.
+            \item[*] Signature database requires less space.
+            \item[*] Signature is always linear.
         \end{itemize}
     \item[] {Disadvantage}
         \begin{itemize}
