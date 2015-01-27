@@ -1,12 +1,8 @@
 LaTeX Template for Project Report
 ---------------------------------
-_**Version 2.0**_
 
 Abstracted from a Major Project Report at CSED, NIT Calicut but can be
 modified easily to use for other reports also.
-
-Released under Creative Commons Attribution license (CC-BY)
-Info: http://creativecommons.org/licenses/by/3.0/
 
 ### Created by
 
@@ -42,3 +38,7 @@ Credits
 =======
 NITC logo: Mr Chandramohan MK, Graphic Studio, Central Library, NIT Calicut  
 Hacker logo: http://www.catb.org/hacker-emblem/
+
+License
+=======
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">LaTeX Template for Project Report</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://k4rtik.github.io/latex-project-report-template/" property="cc:attributionName" rel="cc:attributionURL">Kartik Singhal</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
